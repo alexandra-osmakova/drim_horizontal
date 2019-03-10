@@ -62,27 +62,13 @@ body {
     flex-direction: column;
 }
 
-/*.all_sections>* {
-    -webkit-transform-origin: left top;
-    transform-origin: left top;
-    -webkit-transform: rotate(90deg) translate3d(0, calc(-100vh), 0);
-    transform: rotate(90deg) translate3d(0, calc(-100vh), 0); */
 
-
-.page_section {/*
-    width: 100vw;
-    height: 100vw;
-    padding: 2.25rem 3.8125rem;*/
+.page_section {
     flex:0 0 100vw;
-    height:100vh;
     display:flex;
     position:relative;
     align-items:center;
     justify-content:center;
-}
-
-.scroll_effect {
-    overflow-y: hidden
 }
 
 .small_text {
@@ -112,6 +98,11 @@ body {
     padding-bottom: 9.625rem;
 }
 
+.main-section__contacts span{
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
 .company_logo_container {
     width: 100%;
     display: flex;
@@ -136,7 +127,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding-top: 11.5rem;
+    padding-top: 15.5rem;
 }
 
 .advantage {
@@ -174,6 +165,10 @@ body {
     padding-top: 3.8125rem;
     position: relative;
     flex: auto;
+}
+
+.our_works_content_item {
+    height: 100%;
 }
 
 .our_works_content .normal_text {
@@ -228,7 +223,7 @@ body {
 
 .our_works_content_item_img{
     position: absolute;
-    right: 3.125rem;
+    right: 1.125rem;
     height: 28rem;
     width: 23rem;
     bottom: 0rem;
@@ -276,6 +271,7 @@ body {
 
 .workers_content_item:nth-of-type(1) {
     width: 40%;
+    min-height: 181px;
 }
 
 
@@ -389,6 +385,10 @@ body {
     background-image: url(../img/worker_pic9.png);
 }
 
+.contacts .section_content_second_type {
+    padding: 5.25rem 10.125rem 0;
+}
+
 .contacts_content {
     display: flex;
     padding-top: 2.3125rem;
@@ -397,6 +397,7 @@ body {
 
 .contacts_content h3 {
     padding-bottom: 2.1875rem;
+    font-weight: 400;
 }
 
 .contacts_content_item {
@@ -477,34 +478,31 @@ body {
 .main_section_bg_left {
     position: absolute;
     left: 0;
-    bottom: 0;
-    height: 13.625rem;
-    width: 32rem;
+    bottom: -0.5rem;
+    width: 50%;
 }
 
 .advantage_bg {
     position: absolute;
-    left: -25%;
+    left: -35%;
     right: -50%;
-    bottom: 0;
-    height: 27.8125rem;
+    bottom: -0.5rem;
 }
 
 .reasons_bg {
     position: absolute;
-    right: -115rem;
+    right: -70%;
     top: 0;
-    bottom: 1rem;
-    left: -77rem;
+    left: -45%;
+    min-height: 90%;
 }
 
 
 .apply_bg {
     position: absolute;
-    bottom: 0;
+    bottom: -0.5rem;
     right: 0;
-    height: 16.0625rem;
-    width: 61rem;
+    width: 100%;
 }
 
 
@@ -574,12 +572,12 @@ body {
 @keyframes animated_scroll {
     from {
         opacity: 1;
-        top: 2rem;
+        top: 5rem;
     }
 
     to {
         opacity: 0;
-        top: 8rem;
+        top: 10rem;
     }
 }
 
@@ -605,7 +603,7 @@ body {
 
     html,
     body {
-        font-size: 28px;
+        font-size: 30px;
     }
 }
 
@@ -613,15 +611,23 @@ body {
 
     html,
     body {
-        font-size: 25px;
+        font-size: 27px;
     }
 }
 
-@media screen and (min-width: 1441px) and (max-width: 1800px) {
+@media screen and (min-width: 1601px) and (max-width: 1800px) {
 
     html,
     body {
-        font-size: 19.5px;
+        font-size: 24px;
+    }
+}
+
+@media screen and (min-width: 1441px) and (max-width: 1600px) {
+
+    html,
+    body {
+        font-size: 20px;
     }
 }
 
@@ -629,100 +635,67 @@ body {
 
     html,
     body {
-        font-size: 18px;
+        font-size: 19px;
     }
 }
 
-@media screen and (min-width: 1056px) and (max-width: 1195px) {
+@media screen and (min-width: 991px) and (max-width: 1070px) {
 
     html,
     body {
-        font-size: 16px;
+        font-size: 15px;
     }
 
-    .reasons_bg {
-        height: 65%;
-    }
-}
+} 
 
-@media screen and (min-width: 901px) and (max-width: 1055px) {
+@media screen and (min-width: 925px) and (max-width: 990px) {
+
+    html,
+    body {
+        font-size: 14px;
+    }
+} 
+
+@media screen and (min-width: 870px) and (max-width: 924px) {
 
     html,
     body {
         font-size: 14px;
     }
 
-    .reasons_bg {
-        height: 65%;
+    .section_content_second_type {
+        padding: 5.25rem 4.375rem 0;
     }
+} 
 
-    .advantage,
-    .our_works,
-    .reasons,
-    .workers,
-    .contacts {
-        padding: 5.5625rem 10.25rem 0;
-    }
-
-    .advantage_bg {
-        top: calc(100vh - 24.8125rem);
-    }
-}
-
-
-@media screen and (min-width: 721px) and (max-width: 900px) {
+@media screen and (min-width: 781px) and (max-width: 869px) {
 
     html,
     body {
         font-size: 13px;
     }
 
-    .reasons_bg {
-        height: 71%;
-        left: -69rem;
+    .section_content_second_type {
+        padding: 4.25rem 3.375rem 0;
     }
+} 
 
-    .advantage_bg {
-        top: calc(100vh - 24.8125rem);
-    }
-
-    .advantage,
-    .our_works,
-    .reasons,
-    .workers,
-    .contacts {
-        padding: 5.5625rem 10.25rem 0;
-    }
-
-    .our_works_content_item__controls {
-        width: 75%;
-    }
-
-    .apply_bg {
-        right: -4rem;
-    }
-}
-
-@media screen and (min-width: 600px) and (max-width: 720px) {
+@media screen and (min-width: 731px) and (max-width: 780px) {
 
     html,
     body {
         font-size: 12px;
     }
 
-    .advantage_bg {
-        height: 36.8125rem;
+    .section_content_second_type {
+        padding: 4.25rem 3.8125rem 0;
     }
+} 
 
-    .advantage {
-        padding: 5.5625rem 8.25rem 0;
-    }
+@media screen and (min-width: 10px) and (max-width: 730px) {
 
-    .our_works_content_item__controls {
-        width: 75%;
+    html,
+    body {
+        font-size: 12px;
     }
-
-    .advantages__content {
-        display: block;
-    }
-}
+} 

@@ -42,35 +42,38 @@ function removeAnimation() {
 }
 
 var workers_container = document.getElementsByClassName('worker_pics')[0];
-var workersNamesArr = ['Александр<br>Иванов', 'Нияз<br>Тулеуов', 'Александра<br>Осмакова', 
-'Машхурбек<br>Эргашев', 'Алина<br>Харисова', 'Ильдар<br>Галеев', 'Азамат<br>Менглиев', 'Александра<br>Якимова',
-'Даниил<br>Матков']
+var workersNamesArr = ['Александр<br>Иванов', 'Нияз<br>Тулеуов', 'Александра<br>Осмакова',
+    'Машхурбек<br>Эргашев', 'Алина<br>Харисова', 'Ильдар<br>Галеев', 'Азамат<br>Менглиев', 'Александра<br>Якимова',
+    'Даниил<br>Матков'
+]
 var workersPositionsArr = ['руководитель digital-агенства', 'full-stack разработчик', 'front-end разработчик',
-'интернет-маркетолог', 'web-дизайнер', 'менеджер по работе с клиентами', 'back-end разработчик', 
-'тестировщик', 'системный архитектор',]
+    'интернет-маркетолог', 'web-дизайнер', 'менеджер по работе с клиентами', 'back-end разработчик',
+    'тестировщик', 'системный архитектор',
+]
 var workerName = document.getElementById('worker_name');
 var companyPosition = document.getElementById('company_position');
 var picId = '';
 var workerIcon = document.getElementsByClassName('workers_content_item_pic');
 
 var workersSrills = [
-[],
-['- Golang', '- Java 6', '- Angular 2.x', '- React', '- Ionic Framework 3', '- Cordova', '- JavaScript', '- Ember.js'],
-['- HTML/HTML5', '- CSS/CSS3', '- JavaScript', '- JQuary', '- SASS', '- Bootstrap', '- GIT', '- БЭМ'],
-['- контекстная реклама', '- Яндекс.Директ', '- Google.AdWords', '- таргетинговая реклама', '- soсial-media'],
-['- Sketch', '- Adobe Photoshop', '- Adobe Illustrator', '- Figma', '- UX/UI', '- HTML/CSS'],
-[], 
-['- HTML/HTML5','- CSS/CSS3','- JavaScript', '- JQuary', '- GIT', '- SQL', '- Java', '- PHP'],
-['- Java', '- SQL', '- HTML/CSS', '- GIT', '- PHP'],
-['- Java Spring', '- OSGI', '- Python','- Golang', '- Kubernates', '- Docker']];
-var skillsParent = document.getElementsByClassName('workers_skills')[0]; 
+    [],
+    ['- Golang', '- Java 6', '- Angular 2.x', '- React', '- Ionic Framework 3', '- Cordova', '- JavaScript', '- Ember.js'],
+    ['- HTML/HTML5', '- CSS/CSS3', '- JavaScript', '- JQuery', '- SASS', '- Bootstrap', '- GIT', '- БЭМ'],
+    ['- контекстная реклама', '- Яндекс.Директ', '- Google.AdWords', '- таргетинг', '- soсial-media'],
+    ['- Sketch', '- Adobe Photoshop', '- Adobe Illustrator', '- Figma', '- UX/UI', '- HTML/CSS'],
+    [],
+    ['- HTML/HTML5', '- CSS/CSS3', '- JavaScript', '- JQuery', '- GIT', '- SQL', '- Java', '- PHP'],
+    ['- Java', '- SQL', '- HTML/CSS', '- GIT', '- PHP'],
+    ['- Java Spring', '- OSGI', '- Python', '- Golang', '- Kubernates', '- Docker']
+];
+var skillsParent = document.getElementsByClassName('workers_skills')[0];
 
 
 workers_container.addEventListener('mouseover', function (event) {
     var target = event.target;
     if (target.classList.contains('workers_content_item_pic')) {
         picId = target.id;
-        for(var i = 0; i < workerIcon.length; i++) {
+        for (var i = 0; i < workerIcon.length; i++) {
             workerIcon[i].classList.remove('hover');
         }
         switch (picId) {
@@ -117,57 +120,47 @@ workers_container.addEventListener('mouseover', function (event) {
 });
 
 function passNewText(i) {
-    workerName.innerHTML = workersNamesArr[i-1];
-    companyPosition.innerHTML = workersPositionsArr[i-1];
-    workerIcon[i-1].classList.add('hover');
+    workerName.innerHTML = workersNamesArr[i - 1];
+    companyPosition.innerHTML = workersPositionsArr[i - 1];
+    workerIcon[i - 1].classList.add('hover');
 }
 
 function passWorkerSkills(i) {
-    if(workersSrills[i-1].length != 0) {   
+    if (workersSrills[i - 1].length != 0) {
         skillsParent.innerHTML = '';
-        var skillsSet = workersSrills[i-1]
-        for(var j = 0; j < skillsSet.length; j++) {
+        var skillsSet = workersSrills[i - 1]
+        for (var j = 0; j < skillsSet.length; j++) {
             var newSkill = document.createElement('li');
             newSkill.innerHTML = skillsSet[j]
             skillsParent.appendChild(newSkill)
         }
-    }
-    else {
+    } else {
         skillsParent.innerHTML = '';
     }
 }
 
-window.onload = function() {
+window.onload = function () {
     workerIcon[0].classList.add('hover');
 }
 
 
 var page = document.getElementsByClassName('page')[0];
 var last_pane = page.getElementsByClassName('pane');
-last_pane = last_pane[last_pane.length-1];
-var dummy_x = null;
+last_pane = last_pane[last_pane.length - 1];
+var xCount = null;
 
-window.onscroll = function () {
-  // Horizontal Scroll.
-  var y = document.body.getBoundingClientRect().top;
-  page.scrollLeft = -y;
-  
-  // Looping Scroll.
-}
-// Adjust the body height if the window resizes.
+window.addEventListener('scroll', function () {
+    console.log(1)
+    var topOffset = document.body.getBoundingClientRect().top;
+    page.scrollLeft = -topOffset;
+})
+
 window.onresize = resize;
-// Initial resize.
 resize();
 
-// Reset window-based vars
 function resize() {
-  var w = page.scrollWidth-window.innerWidth+window.innerHeight;
-  document.body.style.height = w + 'px';
-  
-  dummy_x = last_pane.getBoundingClientRect().left+window.scrollY;
-}
+    var pageWidth = page.scrollWidth - window.innerWidth + window.innerHeight;
+    document.body.style.height = pageWidth + 'px';
 
-var parallaxLayerBack = document.getElementsByClassName('parallax_back_layer');
-new simpleParallax(parallaxLayerBack, {
-    orientation: 'left'
-});
+    xCount = last_pane.getBoundingClientRect().left + window.scrollY;
+}
