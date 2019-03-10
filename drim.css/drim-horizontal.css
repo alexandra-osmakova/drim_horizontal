@@ -58,6 +58,8 @@ body {
 
 .section_content_second_type {
     padding: 5.25rem 6.375rem 0;
+    display: flex;
+    flex-direction: column;
 }
 
 /*.all_sections>* {
@@ -171,7 +173,7 @@ body {
     width: 100%;
     padding-top: 3.8125rem;
     position: relative;
-    height: 100%;
+    flex: auto;
 }
 
 .our_works_content .normal_text {
@@ -229,7 +231,8 @@ body {
     right: 3.125rem;
     height: 28rem;
     width: 23rem;
-    bottom: 2.5rem;
+    bottom: 0rem;
+    flex-shrink: 0;
     background-image: url(../img/our_works1.svg);
     background-position: center;
     background-size: contain;
@@ -525,45 +528,48 @@ body {
 
 .parallax_back_layer {
     background-image: url(../img/parallax_back_layer.svg);
-    background-position: center right;
     background-repeat: no-repeat;
-    background-size: contain;
-    background-attachment: fixed;
-    position: fixed;
+    background-size: 80% 180%;
+    position: absolute;
     left: 0;
-    bottom: 0;
     top: 0;
     bottom: 0;
     height: 100vw;
-    width: 100vh;
+    width: 100vw;
     z-index: -1;
-}
-
-.parallax_wrap {
-   position: absolute;
-   left: 0;
-   right: 0;
-   bottom: 0;
-   height: 100vh;
-   width: 100vw;
-   overflow: hidden;
+    transform: translateZ(-10px) scale(8) rotate(90deg);
+    background-attachment: fixed;
 }
 
 .parallax_front_layer {
     background-image: url(../img/parallax_front_layer.svg);
-    background-position: bottom right;
     background-repeat: no-repeat;
-    background-size: contain;
-    background-attachment: fixed;
-    position: fixed;
+    background-size: 70% 185%;
+    position: absolute;
     left: 0;
-    bottom: 0;
     top: 0;
+    bottom: 0;
+    right: 0;
+    height: 100vw;
+    width: 100vw;
+    z-index: -1;
+    transform: translateZ(-1px) scale(2) rotate(90deg);
+    background-attachment: fixed;
+}
+
+.parallax_wrap {
+    position: absolute;
+    left: 0;
+    right: 0;
     bottom: 0;
     height: 100vh;
     width: 100vw;
-    z-index: -1;
-}
+    overflow: hidden;
+    perspective: 1px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    transform-style: preserve-3d;
+ }
 
 @keyframes animated_scroll {
     from {

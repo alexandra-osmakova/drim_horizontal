@@ -166,3 +166,8 @@ function resize() {
   
   dummy_x = last_pane.getBoundingClientRect().left+window.scrollY;
 }
+
+var parallaxLayerBack = document.getElementsByClassName('parallax_back_layer');
+new simpleParallax(parallaxLayerBack, {
+    orientation: 'left'
+});
