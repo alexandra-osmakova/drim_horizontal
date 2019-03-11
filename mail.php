@@ -11,7 +11,7 @@
 
 
 
-    $to = "alexandra.osmakova@gmail.com";
+    $to = "hello@drim.agency";
 
     $headers = "From: $email_from \r\n";
 
