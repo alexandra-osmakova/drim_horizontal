@@ -197,7 +197,7 @@ window.onload = function () {
         console.log(id)
         switch (id) {
             case 'slider_prev':
-            workerSliderChangeSlidePrev()
+                workerSliderChangeSlidePrev()
                 break;
             case 'slider_next':
                 workerSliderChangeSlideNext()
@@ -208,19 +208,18 @@ window.onload = function () {
     }
 
     function workerSliderChangeSlideNext() {
-        if(smallSliderCounter < workersSliderPage.length-1) {
+        if (smallSliderCounter < workersSliderPage.length - 1) {
             smallSliderCounter++;
-            for(var i = 0; i < workersSliderPage.length; i++) {
+            for (var i = 0; i < workersSliderPage.length; i++) {
                 workersSliderPage[i].classList.add('invisible_item');
                 sliderBullet[i].classList.remove('activ_bullet')
             }
             sliderBullet[smallSliderCounter].classList.add('activ_bullet')
             workersSliderPage[smallSliderCounter].classList.remove('invisible_item');
 
-        }
-        else if(smallSliderCounter == workersSliderPage.length-1) {
+        } else if (smallSliderCounter == workersSliderPage.length - 1) {
             smallSliderCounter = 0;
-            for(var i = 0; i < workersSliderPage.length; i++) {
+            for (var i = 0; i < workersSliderPage.length; i++) {
                 workersSliderPage[i].classList.add('invisible_item');
                 sliderBullet[i].classList.remove('activ_bullet')
             }
@@ -230,18 +229,17 @@ window.onload = function () {
     }
 
     function workerSliderChangeSlidePrev() {
-        if(smallSliderCounter == 0) {
-            smallSliderCounter = workersSliderPage.length-1;
-            for(var i = 0; i < workersSliderPage.length; i++) {
+        if (smallSliderCounter == 0) {
+            smallSliderCounter = workersSliderPage.length - 1;
+            for (var i = 0; i < workersSliderPage.length; i++) {
                 workersSliderPage[i].classList.add('invisible_item');
                 sliderBullet[i].classList.remove('activ_bullet')
             }
             sliderBullet[smallSliderCounter].classList.add('activ_bullet')
             workersSliderPage[smallSliderCounter].classList.remove('invisible_item');
-        }
-        else if(smallSliderCounter != 0) {
+        } else if (smallSliderCounter != 0) {
             smallSliderCounter--
-            for(var i = 0; i < workersSliderPage.length; i++) {
+            for (var i = 0; i < workersSliderPage.length; i++) {
                 workersSliderPage[i].classList.add('invisible_item');
                 sliderBullet[i].classList.remove('activ_bullet')
             }

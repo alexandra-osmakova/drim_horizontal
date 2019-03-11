@@ -529,9 +529,10 @@
                         </div>
                     </div>
                     <div class="contacts_content_item">
-                        <form action="">
-                            <input class="apply_form_input" type="text" placeholder="Имя">
-                            <input class="apply_form_input" type="tel" placeholder="Телефон">
+                        <form id="prompt-form" method='post' action="/mail.php">
+                            <input id="client_name" class="apply_form_input" type="text" placeholder="Имя">
+                            <input id="client_phone" class="apply_form_input" type="tel" maxlength="11" placeholder="Телефон"
+                                required>
                             <button class="apply_form_btn" type="submit">Оставить заявку</button>
                         </form>
                     </div>
@@ -565,6 +566,27 @@
         </section>
     </section>
     <script src="./drim.js/drim-horizontal.js"></script>
+    <script>
+        var maskedName = document.getElementById('client_name');
+        maskedName.addEventListener('input', function () {
+
+            var reg = /[0-9A-Za-z]/;
+            if (maskedName.value.search(reg) != -1) {
+                maskedName.value = maskedName.value.replace(reg, '');
+            }
+
+        })
+
+                var maskedPhone = document.getElementById('client_phone');
+                maskedPhone.addEventListener('input', function () {
+
+            var reg = /[A-Za-zА-Яа-яЁё]/;
+            if (maskedPhone.value.search(reg) != -1) {
+                maskedPhone.value = maskedPhone.value.replace(reg, '');
+            }
+
+        })
+    </script>
 </body>
 
 </html>
