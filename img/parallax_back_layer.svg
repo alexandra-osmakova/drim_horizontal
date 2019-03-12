@@ -1,26 +1,19 @@
-<svg width="424" height="1024" viewBox="0 0 424 1024" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g clip-path="url(#clip0)">
-<path d="M348.472 33.1173V0.838013L314.947 0.838013V33.1173H348.472Z" fill="#F4F4F4"/>
-<path d="M423.902 210.653V193.505H406.092V210.653H423.902Z" fill="#F4F4F4"/>
-<path d="M136.705 908.347L234.639 1002.64" stroke="#CACACA"/>
-<path d="M129.539 915.247L227.473 1009.54" stroke="#CACACA"/>
-<path d="M122.373 922.147L220.307 1016.44" stroke="#CACACA"/>
-<path d="M115.207 929.046L213.141 1023.34" stroke="#CACACA"/>
-<path d="M116.942 701.904V669.625H83.4173V701.904H116.942Z" fill="#F4F4F4"/>
-<path d="M401.902 1012.59V980.314H368.377V1012.59H401.902Z" fill="#F4F4F4"/>
-<path d="M34.178 323.631V291.352H0.65329V323.631H34.178Z" fill="#F4F4F4"/>
-<path d="M167.589 639.017L210.543 680.375" stroke="#E5E5E5"/>
-<path d="M164.446 642.043L207.4 683.401" stroke="#E5E5E5"/>
-<path d="M161.303 645.069L204.257 686.427" stroke="#E5E5E5"/>
-<path d="M158.161 648.095L201.115 689.453" stroke="#E5E5E5"/>
-<path d="M250.458 75.1371L332.07 153.717" stroke="#CACACA"/>
-<path d="M244.487 80.8869L326.099 159.467" stroke="#CACACA"/>
-<path d="M238.515 86.6367L320.127 165.217" stroke="#CACACA"/>
-<path d="M232.543 92.3864L314.155 170.967" stroke="#CACACA"/>
-</g>
-<defs>
-<clipPath id="clip0">
-<rect width="1024" height="424" fill="white" transform="translate(424) rotate(90)"/>
-</clipPath>
-</defs>
+<svg width="1024" height="424" viewBox="0 0 1024 424" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="0.838013" y="75.528" width="32.2793" height="33.5247" fill="#F4F4F4"/>
+<rect x="193.505" y="0.0975037" width="17.1484" height="17.81" fill="#F4F4F4"/>
+<line y1="-0.5" x2="135.951" y2="-0.5" transform="matrix(0.693601 -0.72036 0.693601 0.72036 908.694 287.655)" stroke="#CACACA"/>
+<line y1="-0.5" x2="135.951" y2="-0.5" transform="matrix(0.693601 -0.72036 0.693601 0.72036 915.594 294.821)" stroke="#CACACA"/>
+<line y1="-0.5" x2="135.951" y2="-0.5" transform="matrix(0.693601 -0.72036 0.693601 0.72036 922.494 301.987)" stroke="#CACACA"/>
+<line y1="-0.5" x2="135.951" y2="-0.5" transform="matrix(0.693601 -0.72036 0.693601 0.72036 929.393 309.153)" stroke="#CACACA"/>
+<rect x="669.625" y="307.058" width="32.2793" height="33.5247" fill="#F4F4F4"/>
+<rect x="980.314" y="22.0981" width="32.2793" height="33.5247" fill="#F4F4F4"/>
+<rect x="291.352" y="389.822" width="32.2793" height="33.5247" fill="#F4F4F4"/>
+<line y1="-0.5" x2="59.6278" y2="-0.5" transform="matrix(0.693601 -0.72036 0.693601 0.72036 639.364 256.771)" stroke="#E5E5E5"/>
+<line y1="-0.5" x2="59.6278" y2="-0.5" transform="matrix(0.693601 -0.72036 0.693601 0.72036 642.39 259.914)" stroke="#E5E5E5"/>
+<line y1="-0.5" x2="59.6278" y2="-0.5" transform="matrix(0.693601 -0.72036 0.693601 0.72036 645.416 263.057)" stroke="#E5E5E5"/>
+<line y1="-0.5" x2="59.6278" y2="-0.5" transform="matrix(0.693601 -0.72036 0.693601 0.72036 648.442 266.199)" stroke="#E5E5E5"/>
+<line y1="-0.5" x2="113.293" y2="-0.5" transform="matrix(0.693601 -0.72036 0.693601 0.72036 75.4839 173.902)" stroke="#CACACA"/>
+<line y1="-0.5" x2="113.293" y2="-0.5" transform="matrix(0.693601 -0.72036 0.693601 0.72036 81.2337 179.873)" stroke="#CACACA"/>
+<line y1="-0.5" x2="113.293" y2="-0.5" transform="matrix(0.693601 -0.72036 0.693601 0.72036 86.9835 185.845)" stroke="#CACACA"/>
+<line y1="-0.5" x2="113.293" y2="-0.5" transform="matrix(0.693601 -0.72036 0.693601 0.72036 92.7332 191.817)" stroke="#CACACA"/>
 </svg>

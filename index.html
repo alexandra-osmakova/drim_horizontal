@@ -13,9 +13,9 @@
 
 <body>
     <section class="all_sections page">
-        <div class="parallax_wrap">
-            <div class="parallax_back_layer"></div>
-            <div class="parallax_front_layer"></div>
+        <div class="parralax_wrap">
+            <div class="parallax_back_layer rellax" data-rellax-speed="-2"></div>
+            <div class="parallax_front_layer rellax" data-rellax-speed="1"></div>
         </div>
         <section id="first_page" class="page_section main_section pane">
             <div class="section_content">
@@ -259,9 +259,10 @@
                 <div class="reasons_content">
                     <div class="reasons_content_item">
                         <h3>Окупаемость</h3>
-                        <p class="normal_text">Наша главная задача при создании сайта - сделать его <br> таким образом,
-                            чтобы он
-                            окупил свои вложения</p>
+                        <p class="normal_text">
+                            Наша главная задача при создании сайта - сделать его таким образом, чтобы он окупил свои
+                            вложения
+                        </p>
                     </div>
                     <div class="reasons_content_item">
                         <h3>Гибкая разработка</h3>
@@ -565,6 +566,7 @@
             </div>
         </section>
     </section>
+    <script src="./drim.js/rellax.min.js"></script>
     <script src="./drim.js/drim-horizontal.js"></script>
     <script>
         var maskedName = document.getElementById('client_name');
@@ -577,8 +579,8 @@
 
         })
 
-                var maskedPhone = document.getElementById('client_phone');
-                maskedPhone.addEventListener('input', function () {
+        var maskedPhone = document.getElementById('client_phone');
+        maskedPhone.addEventListener('input', function () {
 
             var reg = /[A-Za-zА-Яа-яЁё]/;
             if (maskedPhone.value.search(reg) != -1) {

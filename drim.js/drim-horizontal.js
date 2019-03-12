@@ -163,6 +163,14 @@ window.onload = function () {
 
             xCount = last_pane.getBoundingClientRect().left + window.scrollY;
         }
+
+        var rellax = new Rellax('.rellax', {
+            center: true,
+            wrapper: null,
+            round: true,
+            horizontal: true
+          });
+    
     }
 
     var menu__icon = document.getElementsByClassName('menu__icon')[0];
