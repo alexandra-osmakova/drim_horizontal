@@ -618,7 +618,6 @@ body {
 .contacts_content {
     display: flex;
     padding-top: 2.3125rem;
-    padding-bottom: 10.875rem;
 }
 
 .contacts_content h3 {
@@ -974,7 +973,7 @@ body {
     }
 
     .section_content_second_type {
-        padding: 4.25rem 3.8125rem 0!important;
+        padding: 4.25rem 3.8125rem 0 !important;
     }
 
 

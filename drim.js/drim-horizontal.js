@@ -7,7 +7,7 @@ window.onload = function () {
     ourWorkSlider.addEventListener('click', function (event) {
         var target = event.target;
         if (target.classList.contains('our_works_content_control')) {
-            changeSlide()
+            changeSlide();
         }
     })
 
@@ -144,7 +144,7 @@ window.onload = function () {
     workerIcon[0].classList.add('hover');
 
     if (document.documentElement.clientWidth >= 730) {
-        var page = document.getElementsByClassName('page')[0];
+       var page = document.getElementsByClassName('page')[0];
         var last_pane = page.getElementsByClassName('pane');
         last_pane = last_pane[last_pane.length - 1];
         var xCount = null;
