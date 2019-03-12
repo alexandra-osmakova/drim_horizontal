@@ -8,6 +8,12 @@
     height: 1px;
 }
 
+input[type=text] {
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+}
+
 html,
 body {
     width: 100vw;
@@ -21,7 +27,7 @@ body {
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
     -webkit-overflow-scrolling: touch;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 .thanx_content {
@@ -36,7 +42,7 @@ body {
 .thanx_content h2 {
     color: #000000;
     font-size: 1.5rem;
-    padding-bottom: 2.3125rem;
+    padding-bottom: 1.5rem;
     width: 100%;
     text-align: center;
 }
@@ -46,6 +52,12 @@ body {
     font-size: 1.125rem;
     width: 100%;
     text-align: center;
+}
+
+.thanx_page_drim_logo {
+    width: 8.6875rem;
+    height: 3.625rem;
+    margin: -6rem auto 4.3125rem;
 }
 
 .all_sections {
@@ -72,7 +84,7 @@ body {
 }
 
 .section_content_second_type {
-    padding: 5.25rem 6.375rem 0;
+    padding: 3.25rem 6.375rem 0;
     display: flex;
     flex-direction: column;
 }
@@ -346,27 +358,92 @@ body {
 }
 
 .our_works_content__logo {
-    background-image: url(../img/logo1.png);
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
+}
+
+.first_our_work_logo {
+    background-image: url(../img/logo1.svg);
     width: 16.5625rem;
     height: 7.6875rem;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
+}
+
+.second_our_work_logo {
+    background-image: url(../img/logo2.svg);
+    width: 8.0625rem;
+    height: 7rem;
+    margin-bottom: 1.875rem;
+}
+
+.third_our_work_logo {
+    background-image: url(../img/logo3.svg);
+    width: 15.125rem;
+    height: 3.9375rem;
+    margin-bottom: 2.3125rem;
+}
+
+.fourth_our_work_logo {
+    background-image: url(../img/logo4.svg);
+    width: 6.1875rem;
+    height: 7.3125rem;
+    margin-bottom: 1.125rem;
+}
+
+.fifth_our_work_logo {
+    background-image: url(../img/logo5.svg);
+    width: 11.125rem;
+    height: 4.625rem;
+    margin-bottom: 2.25rem;
 }
 
 
 .our_works_content_item_img {
     position: absolute;
-    right: 1.125rem;
-    height: 28rem;
-    width: 23rem;
     bottom: 0rem;
     flex-shrink: 0;
-    background-image: url(../img/our_works1.svg);
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
+}
+
+.first_our_work_img {
+    background-image: url(../img/our_works1.svg);
+    right: 1.125rem;
+    height: 28rem;
+    width: 23rem;
+}
+
+.second_our_work_img {
+    background-image: url(../img/our_works2.svg);
+    width: 43.75rem;
+    height: 33.25rem;
+    right: -10%;
+    z-index: -1;
+}
+
+.third_our_work_img {
+    background-image: url(../img/our_works3.svg);
+    width: 25.6875rem;
+    height: 25rem;
+    right: 0;
+}
+
+.fourth_our_work_img {
+    background-image: url(../img/our_works4.svg);
+    width: 36.8125rem;
+    height: 22.3125rem;
+    right: -4rem;
+    bottom: 2rem;
+}
+
+.fifth_our_work_img {
+    background-image: url(../img/our_work5.svg);
+    width: 24.4375rem;
+    height: 22.3125rem;
+    bottom: 1rem;
+    right: 0;
 }
 
 .workers_slider__small_screen {
@@ -443,6 +520,12 @@ body {
     flex-wrap: wrap;
     position: relative;
     z-index: 10;
+}
+
+.workers_content_item img {
+    display: none;
+    border-radius: 50%;
+    margin-bottom: 5rem;
 }
 
 .workers_content_item:nth-of-type(1) {
@@ -612,7 +695,7 @@ body {
 }
 
 .contacts .section_content_second_type {
-    padding: 5.25rem 10.125rem 0;
+    padding: 3.25rem 10.125rem 0;
 }
 
 .contacts_content {
@@ -722,6 +805,15 @@ body {
     top: 0;
     left: -45%;
     min-height: 90%;
+}
+
+.reasons_middle_bg {
+    position: absolute;
+    right: -100%;
+    top: 0;
+    left: -50%;
+    min-height: 90%;
+    display: none;
 }
 
 
@@ -937,7 +1029,7 @@ body {
     }
 
     .section_content_second_type {
-        padding: 5.25rem 4.375rem 0;
+        padding: 3.25rem 4.375rem 0;
     }
 }
 
@@ -949,7 +1041,7 @@ body {
     }
 
     .section_content_second_type {
-        padding: 4.25rem 3.375rem 0;
+        padding: 5.25rem 3.375rem 0;
     }
 }
 
@@ -960,8 +1052,114 @@ body {
         font-size: 12px;
     }
 
-    .section_content_second_type {
-        padding: 4.25rem 3.8125rem 0;
+    .small_text {
+        font-size: 1.25rem
+    }
+
+    .normal_text {
+        font-size: 2.083rem;
+    }
+
+    .title_style {
+        font-size: 3.33rem;
+    }
+
+    .main-section__header {
+        padding-bottom: 20.75rem
+    }
+
+    .advantages__content {
+        padding-top: 10.916rem;
+    }
+
+    .section_content_second_type,
+    .contacts .section_content_second_type {
+        padding: 20rem 6.375rem 0;
+    }
+
+    .main_section_bg_left {
+        width: 60%;
+    }
+
+    .advantage_bg {
+        right: -80%;
+    }
+
+    .advantage .title_style,
+    .reasons .title_style {
+        width: max-content;
+    }
+
+    .our_works_content_page_link,
+    .our_works_content_control {
+        font-size: 1.66rem
+    }
+
+    .our_works_content_item__controls {
+        width: 70%;
+    }
+
+    .reasons_content_item .normal_text,
+    .reasons_content_item h3,
+    .workers_content_item h3,
+    .workers_content_item .small_text,
+    .workers_skills li {
+        color: #000000;
+    }
+
+    .reasons_content {
+        padding-top: 25rem;
+        padding-left: unset;
+    }
+
+    .apply_bg {
+        width: auto;
+        left: -10%;
+    }
+
+    .confidential_politics {
+        width: auto;
+        left: auto;
+        right: 35%;
+    }
+
+    .workers_content_item:nth-of-type(1) {
+        width: 35%;
+    }
+
+    .workers_content_item:nth-of-type(2) {
+        width: 60%;
+        margin-top: 0;
+        height: fit-content;
+    }
+
+    .workers_content {
+        padding-top: 10.91rem;
+        justify-content: space-between;
+    }
+
+    .workers_content_item img {
+        display: block;
+    }
+
+    .workers_content_item h3 {
+        margin-top: unset;
+    }
+
+    .workers_content_item_pic:hover, .workers_content_item_pic.hover {
+        transform: scale(1);
+    }
+
+    .reasons_middle_bg {
+        display: block;
+    }
+
+    .reasons_bg {
+        display: none;
+    }
+
+    .rellax {
+        display: none;
     }
 }
 
@@ -972,40 +1170,111 @@ body {
         font-size: 12px;
     }
 
-    .section_content_second_type {
-        padding: 4.25rem 3.8125rem 0 !important;
+
+    .small_text {
+        font-size: 1.25rem
     }
 
+    .normal_text {
+        font-size: 2.083rem;
+    }
 
-    .workers_content_item:nth-of-type(1),
+    .title_style {
+        font-size: 3.33rem;
+    }
+
+    .main-section__header {
+        padding-bottom: 20.75rem
+    }
+
+    .advantages__content {
+        padding-top: 10.916rem;
+    }
+
+    .section_content_second_type,
+    .contacts .section_content_second_type {
+        padding: 20rem 6.375rem 0;
+    }
+
+    .main_section_bg_left {
+        width: 60%;
+    }
+
+    .advantage_bg {
+        right: -80%;
+    }
+
+    .advantage .title_style,
+    .reasons .title_style {
+        width: max-content;
+    }
+
+    .our_works_content_page_link,
+    .our_works_content_control {
+        font-size: 1.66rem
+    }
+
+    .our_works_content_item__controls {
+        width: 70%;
+    }
+
+    .reasons_content_item .normal_text,
+    .reasons_content_item h3,
+    .workers_content_item h3,
+    .workers_content_item .small_text,
+    .workers_skills li {
+        color: #000000;
+    }
+
+    .reasons_content {
+        padding-top: 25rem;
+        padding-left: unset;
+    }
+
+    .apply_bg {
+        width: auto;
+        left: -10%;
+    }
+
+    .confidential_politics {
+        width: auto;
+        left: auto;
+        right: 35%;
+    }
+
+    .workers_content_item:nth-of-type(1) {
+        width: 35%;
+    }
+
     .workers_content_item:nth-of-type(2) {
-        display: none;
+        width: 60%;
+        margin-top: 0;
+        height: fit-content;
     }
 
-    .workers_slider__small_screen {
+    .workers_content {
+        padding-top: 10.91rem;
+        justify-content: space-between;
+    }
+
+    .workers_content_item img {
         display: block;
-        width: 80%;
     }
 
-    .workers_slider__small_screen_pic {
-        margin: 0 0 5.33rem;
+    .workers_content_item h3 {
+        margin-top: unset;
     }
 
-    .workers_slider__small_screen-item h3,
-    .workers_slider_position,
-    .workers_slider_skills li {
-        text-align: unset;
+    .workers_content_item_pic:hover, .workers_content_item_pic.hover {
+        transform: scale(1);
     }
 
-    .workers_slider_skills {
-        position: absolute;
-        top: 4rem;
-        right: -22rem;
+    .reasons_middle_bg {
+        display: block;
     }
 
-    .workers_small_slider__controls {
-        position: absolute;
-        top: 30rem;
+    .reasons_bg {
+        display: none;
     }
 
     .rellax {
@@ -1022,6 +1291,11 @@ body {
         font-size: 14px;
         width: 100%;
         height: 100%;
+    }
+
+    body {
+        overflow: auto;
+        overflow-x: hidden;
     }
 
     .advantage_small_bg {
@@ -1098,7 +1372,7 @@ body {
     .advantages__content {
         display: block;
         position: absolute;
-        bottom: 10rem;
+        top: 15rem;
     }
 
     .advantage .section_content {
@@ -1264,6 +1538,10 @@ body {
         display: none;
     }
 
+    .confidential_politics {
+        width: 100%
+    }
+
 }
 
 @media screen and (min-width: 426px) and (max-width: 500px) {
@@ -1273,6 +1551,15 @@ body {
         font-size: 13px;
         width: 100%;
         height: 100%;
+    }
+
+    body {
+        overflow: auto;
+        overflow-x: hidden;
+    }
+
+    .confidential_politics {
+        width: 100%
     }
 
     .advantage_small_bg {
@@ -1349,7 +1636,7 @@ body {
     .advantages__content {
         display: block;
         position: absolute;
-        bottom: 10rem;
+        top: 20rem;
     }
 
     .advantage .section_content {
@@ -1526,6 +1813,11 @@ body {
         height: 100%;
     }
 
+    body {
+        overflow: auto;
+        overflow-x: hidden;
+    }
+
     .advantage_small_bg {
         top: -40%;
     }
@@ -1750,6 +2042,10 @@ body {
         display: none;
     }
 
+    .confidential_politics {
+        width: 100%
+    }
+
 }
 
 @media screen and (min-width: 351px) and (max-width: 375px) {
@@ -1759,6 +2055,11 @@ body {
         font-size: 13px;
         width: 100%;
         height: 100%;
+    }
+
+    body {
+        overflow: auto;
+        overflow-x: hidden;
     }
 
     .all_sections {
@@ -1974,6 +2275,10 @@ body {
         display: none;
     }
 
+    .confidential_politics {
+        width: 100%
+    }
+
 }
 
 @media screen and (min-width: 320px) and (max-width: 350px) {
@@ -1983,6 +2288,11 @@ body {
         font-size: 12px;
         width: 100%;
         height: 100%;
+    }
+
+    body {
+        overflow: auto;
+        overflow-x: hidden;
     }
 
     .all_sections {
@@ -2192,6 +2502,10 @@ body {
 
     .rellax {
         display: none;
+    }
+
+    .confidential_politics {
+        width: 100%
     }
 
 }

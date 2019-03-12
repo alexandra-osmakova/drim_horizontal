@@ -1,5 +1,4 @@
 window.onload = function () {
-
     var ourWorkSlider = document.getElementsByClassName('our_works_content')[0];
     var ourWorkSliderPages = document.getElementsByClassName('our_works_content_item');
     var sliderCounter = 0;
@@ -56,6 +55,12 @@ window.onload = function () {
     var companyPosition = document.getElementById('company_position');
     var picId = '';
     var workerIcon = document.getElementsByClassName('workers_content_item_pic');
+    var workers_pic__middle_size = document.getElementById('workers_pic__middle_size');
+
+    var workersPicSrcArr = ['./img/worker_pic1.jpg', './img/worker_pic2.png', './img/worker_pic3.png',
+        './img/worker_pic4.png', './img/worker_pic5.png', './img/worker_pic6.png', './img/worker_pic7.png',
+        './img/worker_pic8.png', './img/worker_pic9.png'
+    ]
 
     var workersSrills = [
         [],
@@ -81,39 +86,48 @@ window.onload = function () {
             switch (picId) {
                 case 'first_worker':
                     passNewText(1);
-                    passWorkerSkills(1)
+                    passWorkerSkills(1);
+                    changePicSrc(1)
                     break;
                 case 'second_worker':
                     passNewText(2);
                     passWorkerSkills(2);
+                    changePicSrc(2)
                     break;
                 case 'third_worker':
                     passNewText(3);
                     passWorkerSkills(3);
+                    changePicSrc(3)
                     break;
                 case 'fourth_worker':
                     passNewText(4);
                     passWorkerSkills(4);
+                    changePicSrc(4)
                     break;
                 case 'fifth_worker':
                     passNewText(5);
-                    passWorkerSkills(5)
+                    passWorkerSkills(5);
+                    changePicSrc(5)
                     break;
                 case 'sixth_worker':
                     passNewText(6);
                     passWorkerSkills(6);
+                    changePicSrc(6)
                     break;
                 case 'seventh_worker':
                     passNewText(7);
-                    passWorkerSkills(7)
+                    passWorkerSkills(7);
+                    changePicSrc(7)
                     break;
                 case 'eighth_worker':
                     passNewText(8);
-                    passWorkerSkills(8)
+                    passWorkerSkills(8);
+                    changePicSrc(8)
                     break;
                 case 'nineth_worker':
                     passNewText(9);
-                    passWorkerSkills(9)
+                    passWorkerSkills(9);
+                    changePicSrc(9)
                     break;
                 default:
                     console.log('Some mistake')
@@ -141,10 +155,14 @@ window.onload = function () {
         }
     }
 
+    function changePicSrc(i) {
+        workers_pic__middle_size.src = workersPicSrcArr[i - 1]
+    }
+
     workerIcon[0].classList.add('hover');
 
     if (document.documentElement.clientWidth >= 730) {
-       var page = document.getElementsByClassName('page')[0];
+        var page = document.getElementsByClassName('page')[0];
         var last_pane = page.getElementsByClassName('pane');
         last_pane = last_pane[last_pane.length - 1];
         var xCount = null;
@@ -169,8 +187,8 @@ window.onload = function () {
             wrapper: null,
             round: true,
             horizontal: true
-          });
-    
+        });
+
     }
 
     var menu__icon = document.getElementsByClassName('menu__icon')[0];
